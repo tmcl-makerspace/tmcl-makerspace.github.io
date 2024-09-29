@@ -234,59 +234,161 @@
                             Some of major reasons are <b>Climate Change</b>, <b>Population Growth</b>,
                             <b>Urbanization</b>, <b>Industrialization</b>, <b>Deforestation</b>, <b>Overuse of water
                                 resources</b> etc.
-
                         </p>
 
                         <p>
-                            Now the problem is how we monitor and act on these ready to die and critically import water
-                            fresh water resources.
+                            The below images show a images shows drying up of fresh water resources in different parts
+                            of the world. If you see in difference in the images between first row (image taken from
+                            LANDSAT 1984) and second row (image taken from LANDSAT 2021 and 2022) you can see the
+                            difference in the water levels/water area cover in the lakes.
                         </p>
 
-                        <p>
-                            The problem has been identified by <b>@Arishta Jain</b> and <b>@Pranav Shah</b> after a lot
-                            of research
-                            and brainstorming.
-                        </p>
+                        <!-- Write on Why This is problem is important? -->
+                        <h5 class="category">Why This Problem is Important?</h5>
+                        <ul>
+                            <li><b>Critical for Life:</b> Freshwater is essential for drinking, agriculture, sanitation,
+                                and sustaining ecosystems. The loss of freshwater lakes threatens biodiversity and human
+                                survival.</li>
+                            <li><b>Impact on Communities:</b> Many communities rely on lakes for drinking water,
+                                fishing, and agriculture. The depletion of these resources can lead to displacement,
+                                food shortages, and economic hardship.</li>
+                            <li><b>Climate Change Indicator:</b> Shrinking lakes serve as an early warning sign of the
+                                effects of climate change, reflecting changes in precipitation, temperature, and land
+                                use.</li>
+                            <li><b>Water Scarcity Crisis:</b> With global populations rising, the demand for freshwater
+                                is increasing. Depleting lakes exacerbates the growing global water scarcity crisis.
+                            </li>
+                            <li><b>Environmental and Economic Consequences:</b> The decline of freshwater lakes disrupts
+                                ecosystems, leading to loss of biodiversity and increased risks of natural disasters
+                                like droughts and floods.</li>
+                        </ul>
 
-                        
                         <!-- Add one two images from each folder, two rows of images, one in the first row and second row with t-->
-                        <table>
+                        <!-- Align the following table in center -->
+
+                        <table align="center">
+                            <caption style="text-align: center;">Drying up of fresh water resources in different parts
+                                of the world. The first row shows LANDSAT images captured in 1984 and second row shows
+                                same lake in more recent years(2021 and 2022)</caption>
                             <tr>
-                                <td><img src="img/aral/1984.png" alt="Aral 1984" style="height: 256px; width: 256px;"></td>
-                                <td><img src="img/bolivia/1984.png" alt="Aral 2022" style="height: 256px; width: 256px;"></td>
-                                <td><img src="img/puzhal/1984.png" alt="Aral 2022" style="height: 256px; width: 256px;"></td>
-                                <td><img src="img/sawa/1984.png" alt="Aral 2022" style="height: 256px; width: 256px;"></td>
-                                <td><img src="img/urmia/1984.png" alt="Aral 2022" style="height: 256px; width: 256px;"></td>
+                                <th><B>Aral Sea</B></th>
+                                <th><B>Lake Poopo</B></th>
+                                <th><b>Puzhal Lake</b></th>
+                                <th><b>Sawa Lake</b></th>
+                                <th><b>Urmia Lake</b></th>
                             </tr>
                             <tr>
-                                <td><img src="img/aral/2022.png" alt="Aral 1984" style="height: 256px; width: 256px;"></td>
-                                <td><img src="img/bolivia/2022.png" alt="Aral 2022" style="height: 256px; width: 256px;"></td>
-                                <td><img src="img/puzhal/2022.png" alt="Aral 2022" style="height: 256px; width: 256px;"></td>
-                                <td><img src="img/sawa/2022.png" alt="Aral 2022" style="height: 256px; width: 256px;"></td>
-                                <td><img src="img/urmia/2022.png" alt="Aral 2022" style="height: 256px; width: 256px;"></td>
+                                <td><img src="img/aral/1984.png" alt="Aral 1984" style="height: 256px; width: 256px;">
+                                </td>
+                                <td><img src="img/bolivia/1984.png" alt="Aral 2022"
+                                        style="height: 256px; width: 256px;"></td>
+                                <td><img src="img/puzhal/1984.png" alt="Aral 2022" style="height: 256px; width: 256px;">
+                                </td>
+                                <td><img src="img/sawa/1984.png" alt="Aral 2022" style="height: 256px; width: 256px;">
+                                </td>
+                                <td><img src="img/urmia/1984.png" alt="Aral 2022" style="height: 256px; width: 256px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/aral/2022.png" alt="Aral 1984" style="height: 256px; width: 256px;">
+                                </td>
+                                <td><img src="img/bolivia/2021.png" alt="Aral 2022"
+                                        style="height: 256px; width: 256px;"></td>
+                                <td><img src="img/puzhal/2004.png" alt="Aral 2022" style="height: 256px; width: 256px;">
+                                </td>
+                                <td><img src="img/sawa/2022.png" alt="Aral 2022" style="height: 256px; width: 256px;">
+                                </td>
+                                <td><img src="img/urmia/2022.png" alt="Aral 2022" style="height: 256px; width: 256px;">
+                                </td>
                             </tr>
                         </table>
+
+
+                        <p class="card-text">
+                            <!-- Just create some space before the new section -->
+                        </p>
+
+                    </div>
+
+                    <!-- Our Solution -->
+                    <div class="container">
+                        <h4 class="category">Our Solution</h4>
+
+                        <h5 class="category">What's Been Developed So Far</h5>
+                        <p class="card-text">
+                            We have developed a Python script that performs the following tasks:
+                        <ol>
+                            <li><b>Satellite Image Retrieval:</b> By providing the latitude and longitude of a specific
+                                water body (or any location), the script interacts with the Google Earth Engine API to
+                                download historical satellite images from the past 40 years.</li>
+                            <li><b>Image Processing:</b> The script processes the retrieved images, generating timelapse
+                                visuals that highlight the changes in the water body over time.</li>
+                        </ol>
+                        </p>
+
+                        <!-- Timelapse GIFs for Five Lakes -->
+                        <h5 class="category">Timelapse of Different Lakes</h5>
+                        <p class="card-text">
+                            Below are the timelapse GIFs showing the decline of water levels in five different lakes
+                            over the past decades:
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center flex-nowrap">
+                            <div class="text-center mx-2">
+                                <h6><b>Aral Sea</b></h6>
+                                <img src="timelapses/aral.gif" alt="Timelapse of Aral Sea" 
+                                    style="width: 256px; height: 256px;">
+                            </div>
+                            <div class="text-center mx-2">
+                                <h6><b>Lake Poopo</b></h6>
+                                <img src="timelapses/poopo.gif" alt="Timelapse of Lake Poopo" 
+                                    style="width: 256px; height: 256px;">
+                            </div>
+                            <div class="text-center mx-2">
+                                <h6><b>Puzhal Lake</b></h6>
+                                <img src="timelapses/puzhal.gif" alt="Timelapse of Puzhal Lake" 
+                                    style="width: 256px; height: 256px;">
+                            </div>
+                            <div class="text-center mx-2">
+                                <h6><b>Sawa Lake</b></h6>
+                                <img src="timelapses/sawa.gif" alt="Timelapse of Sawa Lake"
+                                    style="width: 256px; height: 256px;">
+                            </div>
+                            <div class="text-center mx-2">
+                                <h6><b>Urmia Lake</b></h6>
+                                <img src="timelapses/urmia.gif" alt="Timelapse of Urmia Lake"
+                                    style="width: 256px; height: 256px;">
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            <!-- Just create some space before the new section -->
+                        </p>
                         
 
+
+
+                        <h5 class="category">Future Development Plans</h5>
+                        <p class="card-text">
+                            The next steps to further enhance the project include:
+                        <ol>
+                            <li><b>Web Application Devlopment and Deployment:</b> Transform the existing Python script
+                                into a
+                                user-friendly web application that allows users to easily interact with the tool by
+                                simply entering the coordinates of a location.</li>
+                            <li><b>Water Level Analysis:</b> Implement advanced image processing algorithms to measure
+                                and track changes in water levels year over year, plotting these changes in an
+                                interactive graph.</li>
+                            <li><b>Forecasting with Machine Learning:</b> Design and develop a deep learning model
+                                capable of predicting future water levels based on historical data. The model will issue
+                                alerts if the forecasted levels indicate a critical decline.</li>
+                        </ol>
+                        </p>
+
                         <p class="card-text">
                             <!-- Just create some space before the new section -->
                         </p>
-
                     </div>
 
-                    <!-- defining the problem -->
-                    <div class="container">
-                        <h4 class="category">Our Work</h4>
-                        <p class="card-text">
-                            
-
-                        </p>
-
-                        <p class="card-text">
-                            <!-- Just create some space before the new section -->
-                        </p>
-
-                    </div>
 
 
 
